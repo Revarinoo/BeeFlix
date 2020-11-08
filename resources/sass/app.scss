@@ -1,0 +1,182 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background: #E8ECEF;
+}
+
+#containerHome {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.photo-position {
+    height: 400px;
+}
+
+.cardHomePosition {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btnLihatFilm {
+    width: inherit;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+.mid-content {
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 2;
+}
+
+.detail-photo-position {
+    width: 300px;
+}
+
+.detail-table-position {
+    margin-right: 40px;
+    width: 250%;
+}
+
+#detail-title {
+    font-weight: 1000;
+}
+
+.star{
+    margin-top: -10px;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.home-title {
+    font-weight: 1000;
+    margin-left: -14px;
+    text-transform: uppercase;
+}
+
+.navbar-button {
+    padding-top: 30px;
+    margin-left: -111px;
+}
+
+.logo {
+    padding-bottom:50px;
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.navbarCustom {
+    height: 100px;
+}
+
+.imgBtnBack {
+    width: 15px;
+    height: 15px;
+}
+
+.btnViewAll{
+    height: 29.6px;
+    padding-top: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    height: 60px;
+}
+
+#content-footer {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+#icon-footer {
+    height: 15px;
+    width: 15px;
+}
+
+.result {
+    margin-left: 27%;
+}
+
+.icon-cancel {
+    margin-bottom: 88px;
+}
+
+.icon-x-1{
+     height: 150px;
+     width: 150px;
+     margin-top: 50px;
+ }
+
+.icon-x-23 {
+    margin-left: 40px;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+@media(max-width: 990px){
+    .cardHomePosition{
+        width: 400px;
+        margin-left: 27px;
+    }
+
+    .btnLihatFilm {
+        width: 398px;
+    }
+
+    .result {
+        margin-left: 7%;
+    }
+
+    .icon-cancel {
+        margin-bottom: 150px;
+    }
+
+    .icon-x-1{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    .icon-x-23 {
+        margin-left: 10px;
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 911px){
+    .cardHomePosition{
+        width: 450px;
+        margin-left: 50px;
+    }
+
+    .btnLihatFilm {
+        width: 448px;
+    }
+
+}
+
