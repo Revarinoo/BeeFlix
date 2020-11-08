@@ -25,7 +25,7 @@
 
             @else
             <div class="result">
-                <h1>Nama Film Tidak Dapat Ditemukan</h1>
+                <h1>Film Tidak Dapat Ditemukan</h1>
                 <div class="icon-cancel">
                     <img src="/images/close.svg" alt="" class="icon-x-1">
                     <img src="/images/close.svg" alt="" class="icon-x-23">

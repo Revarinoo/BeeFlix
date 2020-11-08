@@ -32,7 +32,10 @@ class MovieController extends Controller
     public function create(Request $request)
     {
         $search = $request->get('q');
-        $movies = Movie::where("title",'like','%'.$search.'%')->paginate(4);
+        $movies = Movie::where("title",'like','%'.$search.'%')->orWhereHas('genre',function ($query)
+        use ($search){
+            $query->where("name",'like','%'.$search.'%');
+        })->paginate(4);
         return view('movies.searchresult',compact('movies'));
     }
 
@@ -97,12 +100,12 @@ class MovieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  string  $name
      * @return \Illuminate\Http\Response
      */
-    public function category($id)
+    public function category($name)
     {
-        $movies = Movie::where('genre_id',$id)->get();
-        return view('movies.category', compact('movies'));
+        $genres = Genre::where('name',$name)->get();
+        return view('movies.category', compact('genres'));
     }
 }

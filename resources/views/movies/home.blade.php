@@ -11,7 +11,7 @@
                     <div class="card mb-5">
                         <img src="/images/{{$movie->photo ? $movie->photo : 'http://placehold.it/100x100'}}" class="card-img-top photo-position" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{$movie->title}}</h5>
+                            <h5 class="card-title movieTitle">{{$movie->title}}</h5>
                             <form action="{{route('movies.show',$movie->id)}}" method="POST"></form>
                             <a href="{{route('movies.show',$movie->id)}}" class="btn btn-dark d-lg-block btnLihatFilm">LIHAT FILM</a>
                         </div>

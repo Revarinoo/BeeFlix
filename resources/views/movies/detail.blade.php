@@ -15,7 +15,7 @@
                 @endfor
                 <p class="text-justify">{{$movies->description}}</p>
                 @method('POST')
-                <p>Kategori : <a href="{{route('movies.category',$movies->genre_id)}}">{{$movies->genre->name}}</a></p>
+                <p>Kategori : <a href="{{route('movies.category',$movies->genre->name)}}">{{$movies->genre->name}}</a></p>
             </div>
             <div class="detail-table-position">
                 <h5 style="font-weight: 700; margin-bottom: 30px;">EPISODE</h5>
