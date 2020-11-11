@@ -4,7 +4,7 @@
 
     <div class="container-fluid" id="containerHome">
         @foreach($genres as $genre)
-        <h3 class="home-title">{{$genre->name}}</h3>
+        <h3 class="home-title typewriter-animation">{{$genre->name}}</h3>
             <div class="row">
                 @foreach($genre->movie as $movie)
                 <div class="col-lg-3 cardHomePosition">
